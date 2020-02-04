@@ -5,8 +5,8 @@
    Tutorial 10
    Case Problem 1
   
-   Author: 
-   Date:   
+   Author: yelaina buford
+   Date:   2/3/20
      
    Filename: tc_order.js  
 
