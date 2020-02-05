@@ -13,7 +13,7 @@
 */
 
 var orderTotal = 0;
-var cartHTML = "<tabel>";
+var cartHTML = "<table>";
 cartHTML += "<tr>";
 cartHTML += "<th>Item</th><th>Description</th><th>Price</th><th>Qty</th><th>Total</th>";
 cartHTML += "</tr>";

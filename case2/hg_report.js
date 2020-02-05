@@ -28,3 +28,7 @@ gameReport += itemSummary;
 document.getElementsByTagName("article").innerHTML = gameReport;
  
 var ratingsSum = 0;
+var ratiingsCount = ratings.length;
+for(var i = 0; i < ratings.length; i++){
+   
+}
