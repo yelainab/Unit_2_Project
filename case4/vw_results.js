@@ -29,10 +29,19 @@ for(var i = 0; i < race.length; i++){
    var totalVotes = 0;
    calcSum.forEach(votes[i]);
    reportHTML += "<table>";
+   reportHTML += "<caption>" + race[i] + "</caption>";
+   reportHTML += "<tr><th>candidates</th><th>votes</th></tr>";
 
+   candidateRow(i, totalVotes);
+   reportHTML += candidateRow();
+   reportHTML += "</table>";
 }
 
+document.getElementsByTagName("section").innerHTML = reportHTML;
 
+function candidateRow(raceNum, totalVotes){
+   reportHTML += "";
+}
 
 
 
