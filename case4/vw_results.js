@@ -25,23 +25,33 @@
 */
 var reportHTML = "<h1>" + raceTitle + "</h1>";
 
-for(var i = 0; i < race.length; i++){
-   var totalVotes = 0;
-   calcSum.forEach(votes[i]);
-   reportHTML += "<table>";
-   reportHTML += "<caption>" + race[i] + "</caption>";
-   reportHTML += "<tr><th>candidates</th><th>votes</th></tr>";
+// for(var i = 0; i < race.length; i++){
+//    var totalVotes = 0;
+//    votes.forEach(calcSum);
+//    reportHTML += "<table>";
+//    reportHTML += "<caption>" + [i] + "</caption>";
+//    reportHTML += "<tr><th>candidates</th><th>votes</th></tr>";
 
-   candidateRow(i, totalVotes);
-   reportHTML += candidateRow();
-   reportHTML += "</table>";
-}
+//    reportHTML += candidateRow(i, totalVotes);
+//    reportHTML += "</table>";
+// }
 
-document.getElementsByTagName("section").innerHTML = reportHTML;
+document.getElementsByTagName("section")[0].innerHTML = reportHTML;
 
-function candidateRow(raceNum, totalVotes){
-   reportHTML += "";
-}
+// function candidateRow(raceNum, totalVotes){
+//    var rowHTML = "";
+//    for(var j = 0; j< candidate.length; j+2 ){
+//       var candidateName = candidate[raceNum][j];
+//       var candidateParty = party[raceNum][j];
+//       var candidateVotes = votes[raceNum][j];
+//       var candidatePercent = calcPercent(candidateVotes,totalVotes);
+//       rowHTML += "<tr>";
+//       rowHTML += "<td>" + candidateName + "(" + candidateParty + ")</td>"
+//       rowHTML += "<td>" + candidateVotes.toLocaleString() + "(" + candidatePercent + ")</td>"
+//       rowHTML += "</tr>";
+//    }
+
+// }
 
 
 

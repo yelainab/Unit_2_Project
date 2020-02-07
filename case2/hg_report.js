@@ -49,7 +49,8 @@ for(var i = 0; i < ratings.length; i+2 ){
       ratingReport += "<img src='hg_star.png' />";
    }
 }
-ratingReport += "</td></tr></table>" + ratingSummaries[i] + "</div>";
+ratingReport += "</td></tr></table>" 
+ratingReport += ratingSummaries[i] + "</div>";
 
 document.getElementsByTagName("aside")[0].innerHTML = ratingReport;
 

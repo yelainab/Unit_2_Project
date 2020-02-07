@@ -28,12 +28,14 @@
       
 */
 var donationTotal = 0;
- 
+donors.forEach(calcSum);
+
 var summaryTable = "<table><tr><th>Donors</th><td>" + donors.length + "</td></tr>";
 summaryTable += "<table><tr><th>Total Donations</th><td>$" + donationTotal.toLocaleString() + "</td></tr>";
 summaryTable += "</table>";
 document.getElementById("donationSummary").innerHTML = summaryTable;
- 
+
+
  var majorDonors = donors.filter(findMajorDonors);
  majorDonors.sort(donorSortDescending);
 
