@@ -35,10 +35,10 @@ summaryTable += "<table><tr><th>Total Donations</th><td>$" + donationTotal.toLoc
 summaryTable += "</table>";
 document.getElementById("donationSummary").innerHTML = summaryTable;
 
-
+//find the donor who have given the most and displays this for greatest to least
  var majorDonors = donors.filter(findMajorDonors);
  majorDonors.sort(donorSortDescending);
-
+//displays donor information
 var donorTable = "<table>";
 donorTable += "<caption>Major Donors</caption>";
 donorTable += "<tr>";
